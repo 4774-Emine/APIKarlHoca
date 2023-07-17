@@ -29,7 +29,7 @@ public class C05_StatusCode {
 
     @Test
     public void statusCodev2(){
-
+       //StatusCode assertion işlemi için 2.yol
         Response response = given().
                 baseUri("https://petstore.swagger.io/v2").
                 pathParam("petId", 10).

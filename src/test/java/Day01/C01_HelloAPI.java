@@ -16,7 +16,7 @@ public class C01_HelloAPI {
 
         given().
                 // Herhangi bir request hazirligim yok
-                        when().//Http method çağrılması ve url belirleme
+                when().//Http method çağrılması ve url belirleme
                 get("https://restful-booker.herokuapp.com/booking"). // request method - request url
                 then().//response ile alakalı işlemler , loglama ve assertion
                 log().

@@ -19,8 +19,8 @@ public class C05_BuildingRequest {
                 baseUri("https://restful-booker.herokuapp.com").
                 when().
                 post("/auth").
-                then().
-                log().all();
+                then().statusCode(200);
 
+//Body gönderirken ContentType belirtmeyi unutmuyoruz.
     }
 }

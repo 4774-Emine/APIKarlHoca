@@ -12,7 +12,7 @@ public class C02_PathParams {
     // base URI = https://petstore.swagger.io/v2
     @Test
     public void pathParam(){
-
+//https://petstore.swagger.io/v2/pet/{id}
         // pathParam() methoduyla path de kullanilacak parametreler belirtilebilir
 
         given().
@@ -33,7 +33,7 @@ public class C02_PathParams {
         // pathParams() methodu birden fazla parametreyi ayni anda tanimlamayi saglar
         // pathParams(String key1, Object value1, String key2, Object value2 ...) seklinde kullanilabilir
 
-        // pathParams(Map params) in bir diger kullanimi key value ciftlerinin iicinde bulundugu Map objesini methoda saglamaktir
+        // pathParams(Map params) in bir diger kullanimi key value ciftlerinin icinde bulundugu Map objesini methoda saglamaktir
 
         // path parametrelerini key value ciftleri halinde barindiran map objesi
         Map<String, Object> parameters = new HashMap<>();

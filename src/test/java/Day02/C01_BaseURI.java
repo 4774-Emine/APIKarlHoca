@@ -16,7 +16,7 @@ public class C01_BaseURI {
         // Base URI request gonderilirken url in onune eklenecek olan base URI bilgisini requeste ekler
 
         given().
-                accept(ContentType.JSON).
+                accept("accept: application/json").
                 baseUri("https://petstore.swagger.io/v2").
                 when().
                 get("/store/inventory").

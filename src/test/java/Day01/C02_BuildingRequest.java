@@ -1,5 +1,6 @@
 package Day01;
 
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
@@ -23,8 +24,8 @@ public class C02_BuildingRequest<Request> {
 
         //Requesti hazirla
 
-        RequestSpecification httpRequest = given().
-                header("Accept", "application/json");//json yerine xml de yazarak formatı değiştirebiliriz
+         RequestSpecification httpRequest=given().
+                header("Accept","application/json");//json yerine xml de yazarak formatı değiştirebiliriz
 
         //Hazirlanan requesti gonder
 

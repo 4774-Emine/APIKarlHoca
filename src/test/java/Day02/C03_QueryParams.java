@@ -10,6 +10,7 @@ public class C03_QueryParams {
 
     // URL -> baseURI + endpoint + query
     // query -> ?k=v&k=v
+    //aslında query param ile filtreleme yapıyoruz.
 
     // GET https://restful-booker.herokuapp.com/booking ?firstname=sally&lastname=brown
 
@@ -24,7 +25,7 @@ public class C03_QueryParams {
                 get("/booking").
                 then().
                 log().
-                everything();
+                all();
 
         //    https://restful-booker.herokuapp.com/booking ? firstname = sally & lastname = brown
     }

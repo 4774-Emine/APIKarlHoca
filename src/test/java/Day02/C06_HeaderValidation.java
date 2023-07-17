@@ -12,7 +12,7 @@ public class C06_HeaderValidation {
                 baseUri("https://petstore.swagger.io/v2").
                 pathParam("petId", 10).
                 accept(ContentType.JSON).
-                log().all().
+                log().body().
         when().
                 get("/pet/{petId}").
         then().
@@ -20,6 +20,8 @@ public class C06_HeaderValidation {
                 statusCode(200).
                 contentType("application/json").
                 header("Transfer-Encoding", "chunked"); // (validate edilecek header in ismi, header in beklenen degeri)
+               //header methodu then() den sonra çağrılırsa validation olur
+               // given() dan sonra ise set etme amaçlı kullanılır
     }
 
 }

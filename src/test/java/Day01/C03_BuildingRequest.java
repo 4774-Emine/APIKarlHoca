@@ -9,7 +9,6 @@ import static io.restassured.RestAssured.when;
 public class C03_BuildingRequest {
 
     // Request headerlarinda kullanilan ozel methodlari bu classta gorecegiz
-
     // accept(String value)
     // contentType() -> gonderilecek body nin veri tipini belirler
 
